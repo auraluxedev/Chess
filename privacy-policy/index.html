@@ -3,135 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Privacy Policy - Chess by Auraluxe</title>
+    <title>Privacy Policy | Chess by Auraluxe</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-color: #0b0f19;
-            --container-bg: #151b2b;
-            --text-main: #d1d5db;
-            --text-muted: #9ca3af;
-            --accent: #00e5ff; /* Cyan accent matching your app */
-            --border: #1f2937;
+            --primary: #00e5ff;
+            --bg-dark: #0f172a;
+            --bg-card: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
         }
-
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--bg-color);
+            background-color: var(--bg-dark);
             color: var(--text-main);
             line-height: 1.6;
             margin: 0;
             padding: 0;
         }
-
         .container {
             max-width: 800px;
-            margin: 40px auto;
-            padding: 40px;
-            background-color: var(--container-bg);
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
-            border: 1px solid var(--border);
+            margin: 0 auto;
+            padding: 40px 20px;
         }
-
         header {
             text-align: center;
-            margin-bottom: 40px;
-            padding-bottom: 20px;
-            border-bottom: 1px solid var(--border);
+            margin-bottom: 50px;
+            border-bottom: 1px solid rgba(255,255,255,0.1);
+            padding-bottom: 30px;
         }
-
         h1 {
-            color: #ffffff;
             font-size: 2.5rem;
-            margin: 0 0 10px 0;
             font-weight: 800;
-            letter-spacing: -0.5px;
-        }
-
-        .company-name {
-            color: var(--accent);
-            font-weight: 600;
-            font-size: 1.1rem;
+            margin: 0 0 10px 0;
+            color: var(--primary);
             text-transform: uppercase;
             letter-spacing: 2px;
         }
-
-        .updated-date {
+        .last-updated {
             color: var(--text-muted);
             font-size: 0.9rem;
-            margin-top: 10px;
         }
-
+        .content-card {
+            background-color: var(--bg-card);
+            border-radius: 16px;
+            padding: 30px 40px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border: 1px solid rgba(255,255,255,0.05);
+        }
         h2 {
-            color: #ffffff;
-            font-size: 1.5rem;
-            margin-top: 35px;
-            margin-bottom: 15px;
-            font-weight: 600;
-            display: flex;
-            align-items: center;
+            color: var(--primary);
+            font-size: 1.4rem;
+            margin-top: 30px;
+            border-left: 4px solid var(--primary);
+            padding-left: 10px;
         }
-
-        h2::before {
-            content: '';
-            display: inline-block;
-            width: 8px;
-            height: 24px;
-            background-color: var(--accent);
-            margin-right: 12px;
-            border-radius: 4px;
+        h3 {
+            font-size: 1.1rem;
+            color: #e2e8f0;
+            margin-top: 20px;
         }
-
-        p {
-            margin-bottom: 15px;
+        p, li {
+            color: var(--text-muted);
+            font-size: 1rem;
         }
-
         ul {
-            margin-bottom: 20px;
             padding-left: 20px;
         }
-
         li {
             margin-bottom: 8px;
         }
-
-        .highlight-box {
-            background-color: rgba(0, 229, 255, 0.05);
-            border: 1px solid rgba(0, 229, 255, 0.2);
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
         a {
-            color: var(--accent);
+            color: var(--primary);
             text-decoration: none;
-            transition: opacity 0.2s;
+            transition: opacity 0.3s;
         }
-
         a:hover {
+            opacity: 0.7;
             text-decoration: underline;
-            opacity: 0.8;
         }
-
-        footer {
+        .contact-box {
+            background: rgba(0, 229, 255, 0.1);
+            border: 1px solid var(--primary);
+            padding: 20px;
+            border-radius: 12px;
+            margin-top: 40px;
             text-align: center;
-            margin-top: 50px;
-            padding-top: 20px;
-            border-top: 1px solid var(--border);
-            color: var(--text-muted);
-            font-size: 0.9rem;
-        }
-
-        /* Mobile Responsiveness */
-        @media (max-width: 768px) {
-            .container {
-                margin: 20px;
-                padding: 25px;
-            }
-            h1 { font-size: 2rem; }
-            h2 { font-size: 1.3rem; }
         }
     </style>
 </head>
@@ -139,67 +96,80 @@
 
     <div class="container">
         <header>
-            <div class="company-name">Auraluxe</div>
-            <h1>Privacy Policy for Chess</h1>
-            <div class="updated-date">Last updated: April 23, 2026</div>
+            <h1>Auraluxe</h1>
+            <h2>Privacy Policy for Chess</h2>
+            <div class="last-updated">Last Updated: April 2026</div>
         </header>
 
-        <p><strong>Auraluxe</strong> built the <strong>Chess</strong> app as a Free/Freemium app. This SERVICE is provided by Auraluxe at no cost and is intended for use as is.</p>
-        
-        <p>This page is used to inform visitors regarding our policies with the collection, use, and disclosure of Personal Information if anyone decided to use our Service.</p>
+        <div class="content-card">
+            <p>Welcome to <strong>Chess</strong>, developed and published by <strong>Auraluxe</strong>. We are committed to protecting your privacy and ensuring you have a positive experience while playing our game. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application (the "App").</p>
 
-        <p>If you choose to use our Service, then you agree to the collection and use of information in relation to this policy. The Personal Information that we collect is used for providing and improving the Service. We will not use or share your information with anyone except as described in this Privacy Policy.</p>
+            <p>By downloading, accessing, or playing Chess, you agree to the collection and use of information in accordance with this Privacy Policy. If you do not agree, please do not use the App.</p>
 
-        <h2>Information Collection and Use</h2>
-        <p>For a better experience, while using our Service, we may require you to provide us with certain personally identifiable information. The information that we request will be retained by us and used as described in this privacy policy.</p>
-        <p>The app does use third-party services that may collect information used to identify you. Below are the third-party service providers used by our app:</p>
-        <ul>
-            <li><a href="https://policies.google.com/privacy" target="_blank">Google Play Services</a></li>
-            <li><a href="https://firebase.google.com/policies/analytics" target="_blank">Google Analytics for Firebase</a></li>
-            <li><a href="https://firebase.google.com/support/privacy" target="_blank">Firebase Authentication & Cloud Firestore</a></li>
-        </ul>
+            <h2>1. Information We Collect</h2>
+            <p>To provide a seamless multiplayer experience and improve our services, we may collect the following types of information:</p>
+            
+            <h3>A. Automatically Collected Data</h3>
+            <ul>
+                <li><strong>Device Information:</strong> Device model, operating system version, unique device identifiers, and mobile network information.</li>
+                <li><strong>Usage Data:</strong> In-game actions, match history, ELO ratings, play time, and features utilized.</li>
+                <li><strong>User ID & Authentication:</strong> We generate a unique User ID via Firebase Authentication to securely manage your profile, matchmaking, and game progress across devices.</li>
+                <li><strong>Advertising Identifiers:</strong> Google Advertising ID (AAID) for serving personalized ads.</li>
+            </ul>
 
-        <h2>Data Collected for Multiplayer Features</h2>
-        <p>To provide real-time online matchmaking and gameplay, we collect and store the following data on our secure servers:</p>
-        <ul>
-            <li><strong>Profile Information:</strong> Player Display Name and Avatar preferences.</li>
-            <li><strong>Game Data:</strong> Chess moves, matchmaking status, ELO ratings, and match history.</li>
-            <li><strong>Chat Data:</strong> In-game messages sent during a live match (these are temporary and related to the specific active game room).</li>
-        </ul>
+            <h3>B. Data Provided by You</h3>
+            <ul>
+                <li><strong>Profile Information:</strong> Player name, avatar selection, and linked email address (if authenticated via Google/Email).</li>
+                <li><strong>Communication:</strong> In-game chat messages (which are temporarily processed to deliver real-time gameplay).</li>
+            </ul>
 
-        <div class="highlight-box">
-            <h2>Data Deletion Policy (Your Rights)</h2>
-            <p>We respect your privacy and give you full control over your data. You have the right to request the deletion of your account and all associated personal data.</p>
-            <p><strong>How to request data deletion:</strong></p>
-            <p>Please send an email to <strong>[YOUR_EMAIL@DOMAIN.COM]</strong> with the subject line <em>"Account Deletion Request"</em>. Include your player name or account ID. We will process your request and permanently delete your profile, game history, and authentication data within 14 days.</p>
+            <h2>2. In-App Purchases, Memberships & Diamond Top-Ups</h2>
+            <p>Chess offers premium features, memberships, and in-game currency ("Diamonds") through in-app purchases.</p>
+            <ul>
+                <li><strong>Payment Processing:</strong> All transactions are processed securely through the Google Play Billing system. <strong>Auraluxe does not collect, process, or store your credit card or financial information.</strong></li>
+                <li><strong>Purchase History:</strong> We track your transaction history (e.g., successful diamond top-ups or active membership status) securely in our Firebase Database to ensure your virtual items are correctly credited to your account.</li>
+            </ul>
+
+            <h2>3. Third-Party Services We Use</h2>
+            <p>We use trusted third-party services that may collect information used to identify you. These services operate under their own Privacy Policies:</p>
+            <ul>
+                <li><strong>Google Analytics for Firebase:</strong> Used to understand how players interact with our game, track crashes, and optimize performance.</li>
+                <li><strong>Firebase Firestore & Auth:</strong> Used for secure player authentication, real-time matchmaking, and saving game data.</li>
+                <li><strong>Google AdMob:</strong> Used to display advertisements. AdMob may use advertising IDs to serve personalized ads based on your interests.</li>
+            </ul>
+            <p><em>Links to third-party policies:</em> <br>
+                <a href="https://policies.google.com/privacy" target="_blank">Google Privacy Policy</a> | 
+                <a href="https://support.google.com/admob/answer/6128543?hl=en" target="_blank">AdMob Policies</a>
+            </p>
+
+            <h2>4. How We Use Your Information</h2>
+            <p>We use the collected data for various purposes, including:</p>
+            <ul>
+                <li>To facilitate real-time multiplayer matchmaking and synchronize chess boards.</li>
+                <li>To maintain your account, ELO rating, Diamond balance, and membership status.</li>
+                <li>To serve relevant advertisements via AdMob to keep the base game free.</li>
+                <li>To detect, prevent, and address technical issues or cheating.</li>
+            </ul>
+
+            <h2>5. Data Retention and User Deletion Rights</h2>
+            <p>We retain your data only for as long as your account is active or as needed to provide you the App's services. Under Google Play's Data Safety guidelines, you have the right to request the deletion of your data.</p>
+            <ul>
+                <li><strong>Account Deletion:</strong> You can request the deletion of your account, game history, and purchased Diamond records by contacting us at the email provided below. Upon verification, your data will be permanently erased from our Firebase servers within 30 days.</li>
+            </ul>
+
+            <h2>6. Children's Privacy</h2>
+            <p>Our App is not intended for children under the age of 13. We do not knowingly collect personally identifiable information from children under 13. If we discover that a child under 13 has provided us with personal information, we will delete it immediately from our servers.</p>
+
+            <h2>7. Changes to This Privacy Policy</h2>
+            <p>We may update our Privacy Policy from time to time. We will notify you of any changes by posting the new Privacy Policy on this page and updating the "Last Updated" date. You are advised to review this Privacy Policy periodically for any changes.</p>
+
+            <div class="contact-box">
+                <h3 style="margin-top: 0; color: #00e5ff;">Contact Us</h3>
+                <p style="color: #fff; margin-bottom: 0;">If you have any questions or suggestions about our Privacy Policy, or if you wish to request data deletion, please contact us at:</p>
+                <p style="font-size: 1.2rem; font-weight: bold; color: #00e5ff; margin-top: 10px;">support@auraluxe.com</p>
+            </div>
         </div>
-
-        <h2>Log Data</h2>
-        <p>We want to inform you that whenever you use our Service, in a case of an error in the app we collect data and information (through third-party products) on your phone called Log Data. This Log Data may include information such as your device Internet Protocol (“IP”) address, device name, operating system version, the configuration of the app when utilizing our Service, the time and date of your use of the Service, and other statistics.</p>
-
-        <h2>Cookies</h2>
-        <p>Cookies are files with a small amount of data that are commonly used as anonymous unique identifiers. These are sent to your browser from the websites that you visit and are stored on your device's internal memory.</p>
-        <p>This Service does not use these “cookies” explicitly. However, the app may use third-party code and libraries that use “cookies” to collect information and improve their services. You have the option to either accept or refuse these cookies and know when a cookie is being sent to your device.</p>
-
-        <h2>Security</h2>
-        <p>We value your trust in providing us your Personal Information, thus we are striving to use commercially acceptable means of protecting it. Our database (Firebase) is secured with strict security rules to prevent unauthorized access. But remember that no method of transmission over the internet, or method of electronic storage is 100% secure and reliable, and we cannot guarantee its absolute security.</p>
-
-        <h2>Children’s Privacy</h2>
-        <p>These Services do not address anyone under the age of 13. We do not knowingly collect personally identifiable information from children under 13. In the case we discover that a child under 13 has provided us with personal information, we immediately delete this from our servers. If you are a parent or guardian and you are aware that your child has provided us with personal information, please contact us so that we will be able to do necessary actions.</p>
-
-        <h2>Changes to This Privacy Policy</h2>
-        <p>We may update our Privacy Policy from time to time. Thus, you are advised to review this page periodically for any changes. We will notify you of any changes by posting the new Privacy Policy on this page.</p>
-
-        <h2>Contact Us</h2>
-        <p>If you have any questions or suggestions about our Privacy Policy, do not hesitate to contact us at:</p>
-        <p><strong>Email:</strong> [YOUR_EMAIL@DOMAIN.COM]<br>
-        <strong>Company:</strong> Auraluxe</p>
-
-        <footer>
-            &copy; 2026 Auraluxe. All rights reserved.
-        </footer>
     </div>
 
 </body>
 </html>
-
